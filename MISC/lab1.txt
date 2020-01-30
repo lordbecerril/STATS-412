@@ -1,0 +1,27 @@
+#AUTHOR: Hokwan Cho, edited by Eric Becerril-Blas
+#PROBLEM: Use R to fit the simple linker regression for the following data set (x,y) obtained from an experiment
+
+x <- c(3,2,4,5,1) # x is a column vector, 5x1
+c(3,2,4,5,1) -> x # x is a column vector
+
+y <- c(2,3,5,5,1) # y is a column vector
+
+data <- cbind(x,y) # combining two column vectors
+
+cat("Data is
+")
+print(data)
+
+cat("Correlation Matrix is
+")
+
+print(cor(data))
+
+cat("Lets see dem plots
+")
+
+#plot(data)
+#plot(x,y)
+
+data.fit <-lm(y~x)
+summary(data.fit)
