@@ -1,0 +1,181 @@
+Eric Becerril-Blas
+HW1: 17, 21, 22, 28, 29, 30, 33, 37
+Date: 02/13/20
+
+PROBLEM#17:A study was made on the amount of converted
+sugar in a certain process at various temperatures. The
+data were coded and recorded as follows:
+Temperature, x Converted Sugar, y
+1.0                   8.1
+1.1                   7.8
+1.2                   8.5
+1.3                   9.8
+1.4                   9.5
+1.5                   8.9
+1.6                   8.6
+1.7                   10.2
+1.8                   9.3
+1.9                   9.2
+2.0                   10.5
+
+(a) evaluate s2;
+(b) construct a 95% confidence interval for β0;
+(c) construct a 95% confidence interval for β1.
+STARTING R SOLUTION BELOW FOR PART A:--------------------------------------
+
+x^2 =
+ [1] 1.00 1.21 1.44 1.69 1.96 2.25 2.56 2.89 3.24 3.61 4.00
+
+xy =
+ [1]  8.10  8.58 10.20 12.74 13.30 13.35 13.76 17.34 16.74 17.48 21.00
+
+
+
+y^2 =
+ [1]  65.61  60.84  72.25  96.04  90.25  79.21  73.96 104.04  86.49  84.64
+[11] 110.25
+Sum(x) = 
+16.5
+Sum(y) = 
+100.4
+Sum(xy) = 
+152.59
+Sum(y^2) = 
+923.58
+Sum(x^2) = 
+25.85
+
+
+b0 = 
+6.413636
+b1 = 
+1.809091
+
+
+Sxx = 
+1.1
+Syy = 
+7.201818
+Sxy = 
+1.99
+
+
+s^2 =
+[1] 0.4001919
+
+
+STARTING R SOLUTION BELOW FOR PART B:--------------------------------------
+[1] 4.56852
+[1] 5.43148
+End of Problem 17 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PROBLEM#21: Test the hypothesis that β1 = 6 in Exercise
+11.9 on page 399 against the alternative that β1 < 6.
+Use a 0.025 level of significance
+STARTING R SOLUTION BELOW FOR PART A:--------------------------------------
+
+x^2 =
+ [1] 1600  400  625  400  900 2500 1600  400 2500 1600  625 2500
+
+xy =
+ [1] 15400  8000  9875  7300 14250 22000 19600  8400 28000 21000 12000 25500
+
+
+
+y^2 =
+ [1] 148225 160000 156025 133225 225625 193600 240100 176400 313600 275625
+[11] 230400 260100
+Sum(x) = 
+410
+Sum(y) = 
+5445
+Sum(xy) = 
+191325
+Sum(y^2) = 
+2512925
+Sum(x^2) = 
+15650
+
+
+b0 = 
+343.7056
+b1 = 
+3.220812
+
+
+Sxx = 
+1641.667
+Syy = 
+42256.25
+Sxy = 
+5287.5
+
+
+s^2 =
+[1] 2522.621
+End of Problem 21 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PROBLEM#22: Using the value of s2 found in Exercise
+11.16(a), construct a 95% confidence interval for μY |85
+in Exercise 11.2 on page 398.
+STARTING R SOLUTION BELOW FOR PART A:--------------------------------------
+
+x^2 =
+[1] 5929 2500 5041 5184 6561 8836 9216 9801 4489
+
+xy =
+[1] 6314 3300 5538 2448 3807 7990 9504 9801 4556
+
+
+
+y^2 =
+[1] 6724 4356 6084 1156 2209 7225 9801 9801 4624
+Sum(x) = 
+707
+Sum(y) = 
+658
+Sum(xy) = 
+53258
+Sum(y^2) = 
+51980
+Sum(x^2) = 
+57557
+
+
+b0 = 
+12.06232
+b1 = 
+0.7771416
+
+
+Sxx = 
+2018.222
+Syy = 
+3872.889
+Sxy = 
+1568.444
+
+
+s^2 =
+[1] 379.1408
+End of Problem 22 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PROBLEM#28: Done by hand
+PROBLEM#29: Use the data set
+y    x
+7    2
+50   15
+100  30
+40   10
+70   20
+
+
+(a) Plot the data.
+(b) Fit a regression line through the origin.
+(c) Plot the regression line on the graph with the data.
+(d) Give a general formula (in terms of the yi and the
+slope b1) for the estimator of σ2.
+(e) Give a formula for Var(ˆyi), i = 1, 2, . . . , n, for this
+case.
+(f) Plot 95% confidence limits for the mean response
+on the graph around the regression line.
