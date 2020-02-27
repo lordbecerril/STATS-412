@@ -1,0 +1,147 @@
+Eric Becerril-Blas
+HW3: Chapter 11: 45, 46, 61, 65 and Chapter 12: 5, 10
+Date: 02/27/20
+
+11.45 With reference to Exercise 11.13 on page 400,
+assume a bivariate normal distribution for x and y.
+(a) Calculate r.
+(b) Test the null hypothesis that ρ = −0.5 against the
+alternative that ρ < −0.5 at the 0.025 level of significance.
+(c) Determine the percentage of the variation in the
+amount of particulate removed that is due to
+changes in the daily amount of rainfall.
+
+STARTING R SOLUTION BELOW FOR PART A:--------------------------------------
+Data is
+x = Daily Rainfall
+y = Particulate Removed
+
+x^2 =
+[1] 18.49 20.25 34.81 31.36 37.21 27.04 14.44  4.41 56.25
+
+xy =
+[1] 541.8 544.5 684.4 660.8 695.4 613.6 501.6 296.1 810.0
+
+
+
+y^2 =
+[1] 15876 14641 13456 13924 12996 13924 17424 19881 11664
+
+
+Sum(x) = 
+45
+Sum(y) = 
+1094
+Sum(xy) = 
+5348.2
+Sum(y^2) = 
+133786
+Sum(x^2) = 
+244.26
+Correlation coefficient is r = Sxy/sqrt(Sxx*Syy) where Sxx, Syy, and Sxy are
+
+Sxx = 
+19.26
+Syy = 
+804.2222
+Sxy = 
+-121.8
+So r is
+[1] -0.9786584
+
+STARTING R SOLUTION BELOW FOR PART B:--------------------------------------
+The test statistic is t = (r*sqrt(n-2))/sqrt(1-r^2)
+
+[1] -12.6003
+ since calculated t is < -2.365 we reject the null hypothesis and conclude that ρ < −0.5
+STARTING R SOLUTION BELOW FOR PART C:--------------------------------------
+Sample coefficient of determination is r^2, which is
+[1] 0.9577722
+END OF PROBLEM 45----------------------------------------------------------
+
+11.46 Test the hypothesis that ρ = 0 in Exercise
+11.43 against the alternative that ρ= 0. Use a 0.05
+level of significance.
+Data is
+x = Mathematics Grade
+y = English Grade
+
+x^2 =
+[1] 4900 8464 6400 5476 4225 6889
+
+xy =
+[1] 5180 7728 5040 6438 5070 7470
+
+
+
+y^2 =
+[1] 5476 7056 3969 7569 6084 8100
+
+
+Sum(x) = 
+464
+Sum(y) = 
+476
+Sum(xy) = 
+36926
+Sum(y^2) = 
+38254
+Sum(x^2) = 
+36354
+Correlation coefficient is r = Sxy/sqrt(Sxx*Syy) where Sxx, Syy, and Sxy are
+
+Sxx = 
+471.3333
+Syy = 
+491.3333
+Sxy = 
+115.3333
+So r is
+[1] 0.2396639
+
+The test statistic is t = (r*sqrt(n-2))/sqrt(1-r^2)
+
+[1] 0.4937168
+ since calculated t is < 2.776 we reject the null hypothesis and conclude that ρ < −0
+END OF PROBLEM 46----------------------------------------------------------
+
+11.61 For a simple linear regression model
+Yi = β0 + β1xi +
+i, i= 1, 2, . . . , n,
+where the
+i are independent and normally distributed
+with zero means and equal variances σ2, show that ¯ Y
+and
+B1 =
+n
+i=1
+(xi − ¯x)Yi
+n
+i=1
+(xi − ¯x)2
+have zero covariance.
+
+Done by hand
+END OF PROBLEM 61----------------------------------------------------------
+
+11.65 Suppose that an experimenter postulates a
+model of the type
+Yi = β0 + β1x1i +
+i, i= 1, 2, . . . , n,
+when in fact an additional variable, say x2, also contributes
+linearly to the response. The true model is
+then given by
+Yi = β0 + β1x1i + β2x2i +
+i, i= 1, 2, . . . , n.
+Compute the expected value of the estimator
+B1 =
+n
+i=1
+(x1i − ¯x1)Yi
+n
+i=1
+(x1i − ¯x1)2
+.
+Done by hand
+END OF PROBLEM 61----------------------------------------------------------
+
